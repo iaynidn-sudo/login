@@ -61,8 +61,7 @@ class RatingPlugin: PluginInterface {
     }
     
     private func checkCanRate() {
-        let canRate = SKStoreReviewController.isAvailable
-        let script = "if (window._ratingCallback) { window._ratingCallback(\(canRate)); window._ratingCallback = null; }"
+        let script = "if (window._ratingCallback) { window._ratingCallback(true); window._ratingCallback = null; }"
         DispatchQueue.main.async {
             self.webView?.evaluateJavaScript(script, completionHandler: nil)
         }
