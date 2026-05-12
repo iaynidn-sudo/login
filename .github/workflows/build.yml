@@ -8,12 +8,24 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Copy Info.plist
+
+    - name: Verify project files
       run: |
-        mkdir -p iOS-SmartWebView
-        cp iOS-SmartWebView-Info.plist iOS-SmartWebView/Info.plist 2>/dev/null || true
-        cp iOS-SmartWebView-Info.plist Info.plist 2>/dev/null || true
+        echo "=== Project root files ==="
         ls -la
+        echo ""
+        echo "=== Resources/ ==="
+        ls -la Resources/
+        echo ""
+        echo "=== Resources/web/ ==="
+        ls -la Resources/web/
+        echo ""
+        echo "=== iOS-SmartWebView-Info.plist ==="
+        cat iOS-SmartWebView-Info.plist
+        echo ""
+        echo "=== iOS-SmartWebView.entitlements ==="
+        cat iOS-SmartWebView.entitlements
+
     - name: Build without signing
       run: |
         xcodebuild archive \
@@ -25,6 +37,7 @@ jobs:
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO \
           CODE_SIGNING_ALLOWED=NO
+
     - name: Create export options
       run: |
         mkdir -p ios
@@ -42,6 +55,7 @@ jobs:
         echo '	<string>-</string>' >> ios/exportOptions.plist
         echo '</dict>' >> ios/exportOptions.plist
         echo '</plist>' >> ios/exportOptions.plist
+
     - name: Export IPA
       run: |
         xcodebuild -exportArchive \
@@ -51,6 +65,7 @@ jobs:
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO \
           CODE_SIGNING_ALLOWED=NO
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
