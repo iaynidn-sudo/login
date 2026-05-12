@@ -1,0 +1,41 @@
+workflows:
+  ios-sign-and-build:
+    name: iOS Sign & Build
+    max_build_duration: 60
+    environment:
+      groups:
+        - app-store-connect
+      vars:
+        XCODE_PROJECT: "iOS-SmartWebView.xcodeproj"
+        XCODE_SCHEME: "Secondary Maintenance Scan"
+        BUNDLE_ID: "com.example.iOSSmartWebView"
+      xcode: 16.0
+      cocoapods: default
+    scripts:
+      - name: Install Ruby gems
+        script: |
+          gem install bundler -v '~> 2.4' --no-document
+      - name: Set up code signing
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "$BUNDLE_ID" --type IOS_APP_DEVELOPMENT --create
+      - name: Set up certificates
+        script: |
+          keychain add-certificates
+      - name: Build iOS project
+        script: |
+          xcodebuild archive \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Debug \
+            -archivePath build/ios.xcarchive \
+            -sdk iphoneos
+      - name: Export ipa
+        script: |
+          xcodebuild -exportArchive \
+            -archivePath build/ios.xcarchive \
+            -exportOptionsPlist ios/exportOptions.plist \
+            -exportPath build
+    artifacts:
+      - build/*.ipa
+      - build/ios.xcarchive

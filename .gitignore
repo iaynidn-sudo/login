@@ -1,0 +1,34 @@
+# Xcode
+build/
+*.xcarchive
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+DerivedData/
+*.xcworkspace
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build logs
+*.log
+
+# App Center (已停用)
+appcenter-build-config.json
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
