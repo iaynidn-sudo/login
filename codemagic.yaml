@@ -1,0 +1,52 @@
+workflows:
+  ios-build:
+    name: iOS Build
+    max_build_duration: 60
+    environment:
+      vars:
+        XCODE_PROJECT: "iOS-SmartWebView.xcodeproj"
+        XCODE_SCHEME: "Secondary Maintenance Scan"
+        BUNDLE_ID: "com.example.iOSSmartWebView"
+      xcode: 16.0
+      cocoapods: default
+    scripts:
+      - name: Build without signing
+        script: |
+          xcodebuild archive \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Debug \
+            -archivePath build/ios.xcarchive \
+            -sdk iphoneos \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+      - name: Create export options
+        script: |
+          cat > ios/exportOptions.plist << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>method</key>
+	<string>development</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>signingCertificate</key>
+	<string>-</string>
+	<key>provisioningProfile</key>
+	<string>-</string>
+</dict>
+</plist>
+EOF
+      - name: Export IPA
+        script: |
+          xcodebuild -exportArchive \
+            -archivePath build/ios.xcarchive \
+            -exportOptionsPlist ios/exportOptions.plist \
+            -exportPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+    artifacts:
+      - build/*.ipa
