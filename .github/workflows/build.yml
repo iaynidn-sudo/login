@@ -8,6 +8,12 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Copy Info.plist
+      run: |
+        mkdir -p iOS-SmartWebView
+        cp iOS-SmartWebView-Info.plist iOS-SmartWebView/Info.plist 2>/dev/null || true
+        cp iOS-SmartWebView-Info.plist Info.plist 2>/dev/null || true
+        ls -la
     - name: Build without signing
       run: |
         xcodebuild archive \
