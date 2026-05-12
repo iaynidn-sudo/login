@@ -20,6 +20,9 @@ jobs:
         echo "=== Resources/web/ ==="
         ls -la Resources/web/
         echo ""
+        echo "=== iOS-SmartWebView-Info.plist ==="
+        cat iOS-SmartWebView-Info.plist
+        echo ""
         echo "=== iOS-SmartWebView.entitlements ==="
         cat iOS-SmartWebView.entitlements
 
