@@ -23,6 +23,7 @@
 		8F0C92972E29763F0043A6D9 /* LocationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C92962E29763F0043A6D9 /* LocationPlugin.swift */; };
 		8F0C92992E2976810043A6D9 /* RatingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C92982E2976810043A6D9 /* RatingPlugin.swift */; };
 		8F7E7BDA2E340B77002848D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E7BD92E340B77002848D5 /* AppDelegate.swift */; };
+		8F0C92A02E3BC0000043A6D9 /* FirebasePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C92A12E3BC0000043A6D9 /* FirebasePlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8F7E7BE32E3411EB002848D5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8F7E7BE62E34F09F002848D5 /* iOS-SmartWebView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-SmartWebView-Info.plist"; sourceTree = "<group>"; };
 		8F7E7BEB2E356644002848D5 /* iOS-SmartWebView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-SmartWebView.entitlements"; sourceTree = "<group>"; };
+		8F0C92A12E3BC0000043A6D9 /* FirebasePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -125,6 +127,7 @@
 				8F0C92982E2976810043A6D9 /* RatingPlugin.swift */,
 				8F0C92962E29763F0043A6D9 /* LocationPlugin.swift */,
 				8F0C92942E2976060043A6D9 /* DialogPlugin.swift */,
+				8F0C92A12E3BC0000043A6D9 /* FirebasePlugin.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				8F0C928B2E283C090043A6D9 /* ToastPlugin.swift in Sources */,
 				8F0C927A2E2839ED0043A6D9 /* ConfigLoader.swift in Sources */,
 				8F0C92992E2976810043A6D9 /* RatingPlugin.swift in Sources */,
+				8F0C92A02E3BC0000043A6D9 /* FirebasePlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
