@@ -47,7 +47,6 @@
 		8F7E7BD92E340B77002848D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7E7BE12E34107B002848D5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F7E7BE32E3411EB002848D5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		8F7E7BE62E34F09F002848D5 /* iOS-SmartWebView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-SmartWebView-Info.plist"; sourceTree = "<group>"; };
 		8F7E7BEB2E356644002848D5 /* iOS-SmartWebView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-SmartWebView.entitlements"; sourceTree = "<group>"; };
 		8F0C92A12E3BC0000043A6D9 /* FirebasePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				8F7E7BEB2E356644002848D5 /* iOS-SmartWebView.entitlements */,
-				8F7E7BE62E34F09F002848D5 /* iOS-SmartWebView-Info.plist */,
 				8F7E7BE12E34107B002848D5 /* README.md */,
 				8F7E7BE32E3411EB002848D5 /* .gitignore */,
 				8F7E7BD12E34021A002848D5 /* ProjectOverview.md */,
@@ -381,7 +379,6 @@
 				DEVELOPMENT_TEAM = 6HW5SN674F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-SmartWebView-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Smart WebView";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to let you take and upload photos or videos.";
