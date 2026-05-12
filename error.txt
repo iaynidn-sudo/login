@@ -1,0 +1,229 @@
+ xcodebuild archive \
+    -project "iOS-SmartWebView.xcodeproj" \
+    -scheme "Secondary Maintenance Scan" \
+    -configuration Debug \
+    -archivePath build/ios.xcarchive \
+    -sdk iphoneos \
+    CODE_SIGN_IDENTITY="" \
+    CODE_SIGNING_REQUIRED=NO \
+    CODE_SIGNING_ALLOWED=NO
+  shell: /bin/bash -e {0}
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild archive -project iOS-SmartWebView.xcodeproj -scheme "Secondary Maintenance Scan" -configuration Debug -archivePath build/ios.xcarchive -sdk iphoneos CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos18.5
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+{ platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:147a000bbf41e9b588fe1729e88d6c9271bc4d31, name:My Mac }
+{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'Secondary Maintenance Scan' in project 'iOS-SmartWebView' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: f128bc6b525c21aa71bee3f081df099e
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary Maintenance Scan/IntermediateBuildFilesPath/XCBuildData/f128bc6b525c21aa71bee3f081df099e.xcbuilddata
+CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath
+
+CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation
+
+CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath
+
+ClangStatCache /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -o /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/iOS-SmartWebView-98ea18dba0eea73ea944cccee5ab9c9d-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/iOS-SmartWebView-98ea18dba0eea73ea944cccee5ab9c9d-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/EagerLinkingTBDs/Debug-iphoneos
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/EagerLinkingTBDs/Debug-iphoneos
+
+CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos
+    cd /Users/runner/work/login/login/iOS-SmartWebView.xcodeproj
+    builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan.hmap (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan.hmap
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan.DependencyStaticMetadataFileList (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan.DependencyMetadataFileList (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-project-headers.hmap (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-own-target-headers.hmap (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-generated-files.hmap (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-all-target-headers.hmap (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-all-non-framework-target-headers.hmap (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan_const_extract_protocols.json (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.SwiftFileList (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.SwiftConstValuesFileList (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.LinkFileList (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan-OutputFileMap.json (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    write-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan-OutputFileMap.json
+
+SymLink /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos/Secondary\ Maintenance\ Scan.app ../../InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    /bin/ln -sfh ../../InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos/Secondary\ Maintenance\ Scan.app
+
+MkDir /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    /bin/mkdir -p /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app
+
+CpResource /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app/swv.properties /Users/runner/work/login/login/Resources/swv.properties (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/login/login/Resources/swv.properties /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app
+
+ProcessInfoPlistFile /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app/Info.plist /Users/runner/work/login/login/iOS-SmartWebView-Info.plist (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    builtin-infoPlistUtility /Users/runner/work/login/login/iOS-SmartWebView-Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app/Info.plist
+
+CpResource /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app/offline.html /Users/runner/work/login/login/Resources/web/offline.html (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/login/login/Resources/web/offline.html /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app
+
+CpResource /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app/error.html /Users/runner/work/login/login/Resources/web/error.html (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/login/login/Resources/web/error.html /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/InstallationBuildProductsLocation/Applications/Secondary\ Maintenance\ Scan.app
+
+SwiftDriver Secondary\ Maintenance\ Scan normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    builtin-SwiftDriver -- /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Secondary_Maintenance_Scan -Onone -enforce-exclusivity\=checked @/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios18.5 -g -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -swift-version 5 -I /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos -F /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64 -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan-Swift.h -working-directory /Users/runner/work/login/login -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Secondary_Maintenance_Scan (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+
+EmitSwiftModule normal arm64 (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+/Users/runner/work/login/login/Plugins/LocationPlugin.swift:5:7: error: cannot declare conformance to 'NSObjectProtocol' in Swift; 'LocationPlugin' should inherit 'NSObject' instead
+class LocationPlugin: PluginInterface, CLLocationManagerDelegate {
+      ^
+/Users/runner/work/login/login/Plugins/LocationPlugin.swift:5:7: note: add stubs for conformance
+class LocationPlugin: PluginInterface, CLLocationManagerDelegate {
+      ^
+
+Failed frontend command:
+/Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -emit-module -experimental-skip-non-inlinable-function-bodies-without-types /Users/runner/work/login/login/Plugins/PluginInterface.swift /Users/runner/work/login/login/Managers/SWVContext.swift /Users/runner/work/login/login/Views/WebView.swift /Users/runner/work/login/login/Core/AppDelegate.swift /Users/runner/work/login/login/Plugins/Playground.swift /Users/runner/work/login/login/Managers/PluginManager.swift /Users/runner/work/login/login/Core/iOS_SmartWebViewApp.swift /Users/runner/work/login/login/Managers/URLHandler.swift /Users/runner/work/login/login/Managers/PermissionManager.swift /Users/runner/work/login/login/Plugins/LocationPlugin.swift /Users/runner/work/login/login/Plugins/DialogPlugin.swift /Users/runner/work/login/login/Core/ContentView.swift /Users/runner/work/login/login/Plugins/ToastPlugin.swift /Users/runner/work/login/login/Managers/ConfigLoader.swift /Users/runner/work/login/login/Plugins/RatingPlugin.swift /Users/runner/work/login/login/Plugins/FirebasePlugin.swift -target arm64-apple-ios18.5 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -I /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos -F /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos -no-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/login/login -resource-dir /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -enable-anonymous-context-mangled-names -file-compilation-dir /Users/runner/work/login/login -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Secondary\ Maintenance\ Scan-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/BuildProductsPath/Debug-iphoneos/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/DerivedSources -Xcc -DDEBUG\=1 -module-name Secondary_Maintenance_Scan -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.5 -target-sdk-name iphoneos18.5 -external-plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -emit-module-doc-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan.swiftdoc -emit-module-source-info-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan.swiftsourceinfo -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan-Swift.h -serialize-diagnostics-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan-master-emit-module.dia -emit-dependencies-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary\ Maintenance\ Scan-master-emit-module.d -o /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan.swiftmodule -emit-abi-descriptor-path /Users/runner/Library/Developer/Xcode/DerivedData/iOS-SmartWebView-esfmojsoihszxfdsexyxihjypmqx/Build/Intermediates.noindex/ArchiveIntermediates/Secondary\ Maintenance\ Scan/IntermediateBuildFilesPath/iOS-SmartWebView.build/Debug-iphoneos/Secondary\ Maintenance\ Scan.build/Objects-normal/arm64/Secondary_Maintenance_Scan.abi.json
+SwiftCompile normal arm64 Compiling\ ContentView.swift,\ ToastPlugin.swift,\ ConfigLoader.swift,\ RatingPlugin.swift,\ FirebasePlugin.swift /Users/runner/work/login/login/Core/ContentView.swift /Users/runner/work/login/login/Plugins/ToastPlugin.swift /Users/runner/work/login/login/Managers/ConfigLoader.swift /Users/runner/work/login/login/Plugins/RatingPlugin.swift /Users/runner/work/login/login/Plugins/FirebasePlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+SwiftCompile normal arm64 /Users/runner/work/login/login/Core/ContentView.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Plugins/ToastPlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Managers/ConfigLoader.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Plugins/RatingPlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Plugins/FirebasePlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+** ARCHIVE FAILED **
+
+
+SwiftCompile normal arm64 Compiling\ iOS_SmartWebViewApp.swift,\ URLHandler.swift,\ PermissionManager.swift,\ LocationPlugin.swift,\ DialogPlugin.swift /Users/runner/work/login/login/Core/iOS_SmartWebViewApp.swift /Users/runner/work/login/login/Managers/URLHandler.swift /Users/runner/work/login/login/Managers/PermissionManager.swift /Users/runner/work/login/login/Plugins/LocationPlugin.swift /Users/runner/work/login/login/Plugins/DialogPlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Core/iOS_SmartWebViewApp.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+The following build commands failed:
+    cd /Users/runner/work/login/login
+	EmitSwiftModule normal arm64 (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ Secondary_Maintenance_Scan (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+
+	SwiftCompile normal arm64 Compiling\ PluginInterface.swift,\ SWVContext.swift,\ WebView.swift,\ AppDelegate.swift,\ Playground.swift,\ PluginManager.swift /Users/runner/work/login/login/Plugins/PluginInterface.swift /Users/runner/work/login/login/Managers/SWVContext.swift /Users/runner/work/login/login/Views/WebView.swift /Users/runner/work/login/login/Core/AppDelegate.swift /Users/runner/work/login/login/Plugins/Playground.swift /Users/runner/work/login/login/Managers/PluginManager.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+SwiftCompile normal arm64 /Users/runner/work/login/login/Managers/URLHandler.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+	Archiving project iOS-SmartWebView with scheme Secondary Maintenance Scan
+    cd /Users/runner/work/login/login
+(4 failures)
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Managers/PermissionManager.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Plugins/LocationPlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 /Users/runner/work/login/login/Plugins/DialogPlugin.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+    cd /Users/runner/work/login/login
+    
+
+SwiftCompile normal arm64 Compiling\ PluginInterface.swift,\ SWVContext.swift,\ WebView.swift,\ AppDelegate.swift,\ Playground.swift,\ PluginManager.swift /Users/runner/work/login/login/Plugins/PluginInterface.swift /Users/runner/work/login/login/Managers/SWVContext.swift /Users/runner/work/login/login/Views/WebView.swift /Users/runner/work/login/login/Core/AppDelegate.swift /Users/runner/work/login/login/Plugins/Playground.swift /Users/runner/work/login/login/Managers/PluginManager.swift (in target 'Secondary Maintenance Scan' from project 'iOS-SmartWebView')
+Command SwiftCompile failed with a nonzero exit code
+
+Error: Process completed with exit code 65.
+0s

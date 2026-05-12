@@ -2,7 +2,7 @@ import Foundation
 import WebKit
 import CoreLocation
 
-class LocationPlugin: PluginInterface, CLLocationManagerDelegate {
+class LocationPlugin: NSObject, PluginInterface, CLLocationManagerDelegate {
     var name: String = "Location"
     private weak var webView: WKWebView?
     private var locationManager: CLLocationManager?
