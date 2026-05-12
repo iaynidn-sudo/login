@@ -1,6 +1,7 @@
 import Foundation
 import WebKit
 import StoreKit
+import UIKit
 
 class RatingPlugin: PluginInterface {
     var name: String = "Rating"
