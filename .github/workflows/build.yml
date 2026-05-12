@@ -1,0 +1,58 @@
+name: Build iOS App
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Copy Info.plist
+      run: |
+        mkdir -p iOS-SmartWebView
+        cp iOS-SmartWebView-Info.plist iOS-SmartWebView/Info.plist 2>/dev/null || true
+        cp iOS-SmartWebView-Info.plist Info.plist 2>/dev/null || true
+        ls -la
+    - name: Build without signing
+      run: |
+        xcodebuild archive \
+          -project "iOS-SmartWebView.xcodeproj" \
+          -scheme "Secondary Maintenance Scan" \
+          -configuration Debug \
+          -archivePath build/ios.xcarchive \
+          -sdk iphoneos \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO
+    - name: Create export options
+      run: |
+        mkdir -p ios
+        echo '<?xml version="1.0" encoding="UTF-8"?>' > ios/exportOptions.plist
+        echo '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">' >> ios/exportOptions.plist
+        echo '<plist version="1.0">' >> ios/exportOptions.plist
+        echo '<dict>' >> ios/exportOptions.plist
+        echo '	<key>method</key>' >> ios/exportOptions.plist
+        echo '	<string>development</string>' >> ios/exportOptions.plist
+        echo '	<key>signingStyle</key>' >> ios/exportOptions.plist
+        echo '	<string>manual</string>' >> ios/exportOptions.plist
+        echo '	<key>signingCertificate</key>' >> ios/exportOptions.plist
+        echo '	<string>-</string>' >> ios/exportOptions.plist
+        echo '	<key>provisioningProfile</key>' >> ios/exportOptions.plist
+        echo '	<string>-</string>' >> ios/exportOptions.plist
+        echo '</dict>' >> ios/exportOptions.plist
+        echo '</plist>' >> ios/exportOptions.plist
+    - name: Export IPA
+      run: |
+        xcodebuild -exportArchive \
+          -archivePath build/ios.xcarchive \
+          -exportOptionsPlist ios/exportOptions.plist \
+          -exportPath build \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-app
+        path: build/*.ipa
