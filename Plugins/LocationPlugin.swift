@@ -92,7 +92,7 @@ class LocationPlugin: NSObject, PluginInterface, CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        let status = manager.authorizationStatus()
+        let status = CLLocationManager.authorizationStatus()
         
         if status == .authorizedWhenInUse || status == .authorizedAlways {
             manager.requestLocation()
